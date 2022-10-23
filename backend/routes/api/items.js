@@ -37,6 +37,7 @@ router.param("comment", function(req, res, next, id) {
 });
 
 
+
 router.get("/", auth.optional, function(req, res, next) {
   var query = {};
   var limit = 100;
