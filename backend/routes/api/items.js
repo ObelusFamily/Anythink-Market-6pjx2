@@ -51,6 +51,7 @@ router.get("/", auth.optional, function(req, res, next) {
     offset = req.query.offset;
   }
 
+  
   if (typeof req.query.tag !== "undefined") {
     query.tagList = { $in: [req.query.tag] };
   }
